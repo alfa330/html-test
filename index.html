@@ -627,7 +627,7 @@ h1 {
                 <input type="number" id="chat-hours-norm" min="0" max="744" step="0.01" required>
             </div>
             <div class="form-group">
-                <label for="chat-total-hours">Общее количество часов:</label>
+                <label for="chat-total-hours">Выработано часов в этом месяце:</label>
                 <input type="number" id="chat-total-hours" min="0" max="744" step="0.01" required>
             </div>
             <div class="form-group">
@@ -674,7 +674,7 @@ h1 {
                 <input type="number" id="operator-hours-norm" min="0" max="744" step="0.01" required>
             </div>
             <div class="form-group">
-                <label for="operator-total-hours">Общее количество часов:</label>
+                <label for="operator-total-hours">Выработано часов в этом месяце:</label>
                 <input type="number" id="operator-total-hours" min="0" max="744" step="0.01" required>
             </div>
             <div class="form-group">
@@ -1079,8 +1079,8 @@ h1 {
                     <div class="result-item"><span class="label">Норма часов в этом месяце:</span><span class="value">${hoursNorm.toFixed(2)}</span></div>
                     <div class="result-item"><span class="label">Процент выработки часов:</span><span class="value">${hoursPercentage.toFixed(2)}%</span></div>
                     <div class="result-item"><span class="label">Оклад:</span><span class="value">${baseSalary.toFixed(2)} тг.</span></div>
-                    <div class="result-item"><span class="label">Премиальная часть:</span><span class="value">${premiumPart.toFixed(2)} тг.</span></div constante
-                    <div class="result-item"><span class="label">Бонусы:</span><span class="value">${bonuses} тг (${bonusDetails.join(', ')})</span></div>
+                    <div class="result-item"><span class="label">Премиальная часть:</span><span class="value">${premiumPart.toFixed(2)} тг.</span></div>
+                    <div class="result-item"><span class="label">Бонусы:</span><span class="value">${bonuses} тг ${bonusDetails.join(', ')}</span></div>
                     <div class="result-item"><span class="label">Итоговая сумма:</span><span class="value highlight">${finalSalary.toFixed(2)} тг.</span></div>
                 `;
                 const pointsTable = document.getElementById('points-table');
@@ -1136,7 +1136,7 @@ h1 {
                     <div class="result-item"><span class="label">Процент выработки часов:</span><span class="value">${hoursPercentage.toFixed(2)}%</span></div>
                     <div class="result-item"><span class="label">Оклад:</span><span class="value">${baseSalary.toFixed(2)} тг.</span></div>
                     <div class="result-item"><span class="label">Премиальная часть:</span><span class="value">${premiumPart.toFixed(2)} тг.</span></div>
-                    <div class="result-item"><span class="label">Бонусы:</span><span class="value">${bonuses} тг (${bonusDetails.join(', ')})</span></div>
+                    <div class="result-item"><span class="label">Бонусы:</span><span class="value">${bonuses} тг ${bonusDetails.join(', ')}</span></div>
                     <div class="result-item"><span class="label">Итоговая сумма:</span><span class="value highlight">${finalSalary.toFixed(2)} тг.</span></div>
                 `;
                 const pointsTable = document.getElementById('points-table');
